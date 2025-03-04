@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #eef1f4; /* Gris muy tenue */
+  margin: 0;
+  text-align: center;
+}
+
+/* Título principal */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 90%;
+  margin: 0 auto 1rem auto;
+}
+
+#data span {
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  display: ruby;
+}
+#data span p {
+  margin: 0;
+}
+
+#data span p.text {
+  font-weight: bold;
+}
+
+.tabla {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Tabla */
+table {
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/* Encabezado de la tabla */
+thead {
+  background: #007bff;
+  color: white;
+}
+
+.start {
+  background-color: mediumaquamarine;
+}
+
+.hidden {
+  display: none;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+th {
+  font-weight: bold;
+}
+
+td {
+  p {
+    margin: 0;
+  }
+
+  p:first-of-type {
+    margin-bottom: 8px;
+  }
+}
+
+tr:nth-child(even) {
+  background-color: #f7f9fc; /* Un gris muy suave para filas alternas */
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+  th,
+  td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

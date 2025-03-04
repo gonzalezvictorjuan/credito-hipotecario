@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datos del Préstamo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Datos del Préstamo</h1>
+    <div id="data">
+      <button id="export-pdf">Exportar Landing Page a PDF</button>
+      <section class="actions">
+        <button class="export-csv" data-table="tablaCuotas">
+          Exportar Tabla Cuotas a CSV
+        </button>
+        <button class="export-csv" data-table="tablaCVS">
+          Exportar Tabla Coeficientes a CSV
+        </button>
+        <button class="export-pdf-table" data-table="tablaCuotas">
+          Exportar Tabla Cuotas a PDF
+        </button>
+        <button class="export-pdf-table" data-table="tablaCVS">
+          Exportar Tabla Coeficientes a PDF
+        </button>
+      </section>
+    </div>
+
+    <div class="tabla">
+      <table id="tablaCuotas">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="tabla cvs">
+      <table id="tablaCVS">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
